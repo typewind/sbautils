@@ -39,9 +39,9 @@ def generate_location(game_df, location_col_name: str):
     location_list = game_df[location_col_name].to_list()
     location_list = location_list = [[None, None] if type(x)!=list  else x for x in location_list]
     location = pd.DataFrame(location_list, columns=[location_col_name + "_x", location_col_name + "_y"])
-    location = pd.concat([game_df, location], axis = 1)
-    #location = location.dropna(thresh=5)
-    location = location.drop(location_col_name, axis= 1)
+    location = pd.concat([game_df, location], axis = 1, ignore_index=True)
+    del location[location_col_name]
+    location = location.reset_index(drop = True)
     return location
 
 def expand_dict(game_df, col_name: str):
