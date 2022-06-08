@@ -1,11 +1,11 @@
 Metadata-Version: 2.1
-Name: sba-utlis
+Name: sbautlis
 Version: 0.0.1
 Summary: Personal Statsbomb data analysis utility functions
-Home-page: https://github.com/typewind/sba_utils
+Home-page: https://github.com/typewind/sbautils
 Author: Typewind
 Author-email: indi@juntoalmanzanares.futbol
-Project-URL: Bug Tracker, https://github.com/typewind/sba_utils/issues
+Project-URL: Bug Tracker, https://github.com/typewind/sbautils/issues
 Classifier: Programming Language :: Python :: 3
 Classifier: License :: OSI Approved :: MIT License
 Classifier: Operating System :: OS Independent
@@ -16,3 +16,9 @@ License-File: LICENSE
 # sba_utils
 
 Utits Function of Statsbomb Data Analysis
+
+# build the package 
+
+`python3 -m pip install --upgrade build`
+`python3 -m build`
+`git+file:///Users/typewind/git_projects/Football_Analysis/sba_utils/@master`
