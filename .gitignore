@@ -15,4 +15,4 @@ var/
 src/*.egg-info/
 .installed.cfg
 *.egg
-
+*.pyc
